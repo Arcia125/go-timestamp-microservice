@@ -1,1 +1,1 @@
-# A timestamp microservce built with Golang.
+# A timestamp microservice built with Golang.
