@@ -4,14 +4,13 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"os"
 	"time"
 )
 
 type TimeStamp struct {
 	Time string `json:"time"`
 }
-
-const port = ":3001"
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
@@ -26,7 +25,11 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3001"
+	}
 	http.HandleFunc("/", handler)
 	fmt.Printf("Listening on %s...", port)
-	http.ListenAndServe(port, nil)
+	http.ListenAndServe(":"+port, nil)
 }

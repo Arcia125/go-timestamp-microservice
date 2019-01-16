@@ -1,0 +1,7 @@
+{
+  "name": "Start on Heroku: Go",
+  "description": "Timestamp microservice built with Go.",
+  "keywords": ["timestamp", "go"],
+  "website": "https://go-timestamp.herokuapp.com/",
+  "repository": "https://github.com/Arcia125/go-timestamp-microservice"
+}
