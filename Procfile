@@ -1,1 +1,1 @@
-web: go-timestamp
+web: go run main.go
