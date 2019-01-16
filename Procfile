@@ -1,1 +1,1 @@
-web: go-timestamp
+web: main
