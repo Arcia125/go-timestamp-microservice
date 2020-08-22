@@ -1,1 +1,1 @@
-web: bin/go-timestamp
+web: go run main.go
